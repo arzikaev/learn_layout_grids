@@ -1,0 +1,404 @@
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --margin-botom: 75px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 110%;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 20px 60px;
+  color: #fff;
+  background-color: #3F2AFF;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.container {
+  max-width: 1135px;
+}
+
+.nbsp {
+  display: inline;
+}
+
+.header {
+  background-color: #3F2AFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container__row {
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.header__burger {
+  display: none;
+  padding-top: 22px;
+}
+
+.burger {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-color: inherit;
+  transition: outline 0.3s ease-in-out;
+}
+
+.burger__line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 21px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.burger__line:first-child {
+  top: 0
+}
+
+.burger__line:last-child {
+  bottom: 0
+}
+
+.burger__line:nth-child(2) {
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 70px;
+}
+
+.nav__item {
+  color: #fff;
+  text-align: center;
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.hero {
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.hero__img {
+  background-image: url(/img/hero-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__content {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+
+.hero__text {
+  margin-bottom: 61px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.hero__btn {
+  padding: 24px 70px;
+}
+
+.about {
+  padding-top: 85px;
+  padding-bottom: 67px;
+}
+
+.about__img {
+  top: 20px;
+  background-image: url(/img/about-img.png);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.col-sm-8.about__descr .space {
+  display: none;
+}
+
+.about__title {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 100%;
+  color: #2E2B44;
+}
+
+.about__text {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.about__item {
+  display: flex;
+}
+
+.about__item-text__block {
+  padding-left: 0;
+}
+
+.about__item-text {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.teachers {
+  padding-top: var(--margin-botom);
+  padding-bottom: var(--margin-botom);
+  background-color: #212133;
+}
+
+.teachers__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.teacher__descr {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: 255px 175px;
+  padding-top: 205px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.teacher__1 {
+  background-image: url(/img/teacher-1.png);
+}
+
+.teacher__2 {
+  background-image: url(/img/teacher-2.png);
+}
+
+.teacher__3 {
+  background-image: url(/img/teacher-3.png);
+}
+
+.teacher__4 {
+  background-image: url(/img/teacher-4.png);
+}
+
+.teacher__name {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.teacher__qoute {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #85859B;
+}
+
+.courses {
+  padding-top: var(--margin-botom);
+  padding-bottom: 49px;
+}
+
+.courses__title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 100%;
+  color: #212133;
+}
+
+.course {
+  display: flex;
+}
+
+.course__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 210px 30px 30px 30px;
+  margin-bottom: 30px;
+  background-color: #EDF0F9;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 20px;
+}
+
+.cource_time {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding-left: 28px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  background-image: url(/img/clock.png);
+  background-repeat: no-repeat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.course__1 {
+  background-image: url(/img/course-3.png);
+}
+
+.course__2 {
+  background-image: url(/img/course-4.png);
+}
+
+.course__3 {
+  background-image: url(/img/course-1.png);
+}
+
+.course__4 {
+  background-image: url(/img/course-2.png);
+}
+
+.course__item-descr {
+  margin-bottom: 32px;
+}
+
+.course__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 150%;
+  color: #212133;
+}
+
+.course__descr {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.course__btn {
+  padding: 20px 56px;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #2E2B44;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.footer__row {
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon:first-child{
+  margin-left: 12px;
+}
+
+.icon:last-child {
+  margin-right: 12px;
+}
+
+.registr__row {
+  justify-content: center;
+}
+
+.registr__item {
+  text-align: center;
+}
+
+.reg-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #2E2B44;
+}
+
+.reg-symbol {
+  color: #3F2AFF;
+}
+
+
